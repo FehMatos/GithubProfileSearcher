@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import UserDetails from "./components/UserDetails";
+import FehFooter from "./components/FehFooter";
 import "./styles/App.css";
 
 export default function App() {
@@ -63,6 +64,7 @@ export default function App() {
       </div>
 
       {selectedUser && <UserDetails username={selectedUser} />}
+      <FehFooter />
     </div>
   );
 }
