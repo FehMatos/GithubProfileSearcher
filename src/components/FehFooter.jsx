@@ -14,7 +14,7 @@ const FooterWrapper = styled.footer`
   left: 35%; /* centralizado: (100% - 30%) / 2 */
   transition: all 0.5s ease;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 
   a {
     color: #fff7d1;
