@@ -1,0 +1,204 @@
+.reposCard {
+  background: linear-gradient(to right, #111729, #1d1b48);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 550px;
+  height: 160px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #cdd5e0;
+  cursor: pointer;
+}
+.reposCard:hover {
+  background: linear-gradient(to right, #0c1224, #13103b);
+}
+.ul1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.reposCard h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.reposBtn {
+  align-items: center;
+  position: relative;
+  left: 350px;
+  background-color: transparent;
+}
+
+.reposCard p {
+  margin: 0px 0 0 0;
+  font-size: 14px;
+  color: #cdd5e0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.reposCard h3,
+.reposCard p {
+  position: static;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+@media (max-width: 600px) {
+  .reposCard h3 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .reposCard p {
+    font-size: 13px;
+    -webkit-line-clamp: unset;
+    display: block;
+  }
+}
+
+.repo-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #cdd5e0;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 40px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #cdd5e0;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  border: 10px solid #20293a;
+  object-fit: cover;
+}
+
+.profileContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+}
+
+.location {
+  font-size: 14px;
+}
+
+.name {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.bio {
+  font-size: 14px;
+  max-width: 400px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.stat-item .icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-right: -10px;
+}
+h3 {
+  position: relative;
+}
+p {
+  position: relative;
+  top: -15px;
+}
+
+@media (max-width: 1024px) {
+  .ul1 {
+    grid-template-columns: 1fr;
+  }
+
+  .reposCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .reposBtn {
+    left: auto;
+    align-self: flex-end;
+  }
+
+  .profileContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bio {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .reposCard h3 {
+    font-size: 16px;
+  }
+
+  .reposCard p {
+    font-size: 12px;
+    -webkit-line-clamp: 3;
+  }
+
+  .stat-item .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+  }
+
+  .name {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 8px;
+  }
+}

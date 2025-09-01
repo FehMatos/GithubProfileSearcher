@@ -1,0 +1,37 @@
+input {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
+  margin-top: 35px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  padding-left: 40px;
+  background-image: url("./Search.svg");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 25px 25px;
+  background-color: #364153;
+}
+.search-container {
+  position: relative;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 25px;
+  background-image: #fff;
+
+  pointer-events: none;
+}

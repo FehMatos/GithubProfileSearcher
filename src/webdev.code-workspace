@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "webdev",
+			"path": "../.."
+		},
+		{
+			"name": "country-quiz",
+			"path": "../../../../country-quiz"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "country-quiz"
+	}
+}

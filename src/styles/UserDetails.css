@@ -1,0 +1,107 @@
+.profileContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 220px;
+  padding-right: 400px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  border: 10px solid #20293a;
+  position: relative;
+  top: -60px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.mainInfo {
+  position: static;
+  margin-top: -40px;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+span {
+  padding: 13px;
+  border-radius: 11px;
+}
+
+.cardStats {
+  display: flex;
+  align-items: center;
+  background-color: #111729;
+  padding: 5px 5px;
+  border-radius: 8px;
+  color: #6c7983;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 13px;
+}
+
+.label {
+  color: #364153;
+  font-weight: 500;
+}
+
+.value {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.divider {
+  height: 28px;
+  width: 1px;
+  background-color: #39424e;
+}
+
+@media (max-width: 1024px) {
+  .profileContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 40px 40px;
+  }
+
+  .mainInfo {
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stats {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-width: 6px;
+    top: -30px;
+  }
+
+  .mainInfo {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .stats {
+    gap: 10px;
+    font-size: 12px;
+  }
+}
