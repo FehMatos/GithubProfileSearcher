@@ -34,6 +34,7 @@ const FooterWrapper = styled.footer`
   a {
     position: relative;
     z-index: 1;
+
     color: #fff7d1;
     text-decoration: none;
     display: flex;
