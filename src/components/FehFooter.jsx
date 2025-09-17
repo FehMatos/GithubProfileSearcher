@@ -4,24 +4,42 @@ const FooterWrapper = styled.footer`
   color: #333533;
   padding: 20px;
   font-size: 14px;
-  background: linear-gradient(to right, #ff7b00, #ffa200);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  position: fixed;
-  bottom: 0;
-  left: 35%; /* centralizado: (100% - 30%) / 2 */
-  transition: all 0.5s ease;
+  width: 50%;
+  max-width: 100vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
   border-radius: 8px;
-  margin-bottom: 80px;
+  overflow: hidden;
+  background: transparent;
+  transition: width 0.5s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #ff7b00, #ffa200);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
 
   a {
+    position: relative;
+    z-index: 1;
     color: #fff7d1;
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px; /* espaço entre SVG e texto */
+    gap: 8px;
+    transition: color 0.3s ease;
   }
 
   svg {
@@ -37,7 +55,6 @@ const FooterWrapper = styled.footer`
 
   &:hover {
     width: 100%;
-    left: 0;
   }
 `;
 
@@ -59,7 +76,7 @@ export default function FehFooter() {
             strokeLinecap="round"
           ></path>
         </svg>
-        2025 Felipe Matos
+        2025 Felipe Matos. All rights reserved.
       </a>
     </FooterWrapper>
   );
