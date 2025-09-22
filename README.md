@@ -2,7 +2,7 @@
 
 ## Github Searcher
 
-<p> Github Profile Searcher is a front-end application built with React and CSS.
+<p> Github Profile Searcher is a front-end application built with <b>React</b> and <b>CSS</b>.
 
 </p>
 
