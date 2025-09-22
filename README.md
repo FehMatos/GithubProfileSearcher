@@ -1,12 +1,13 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Github Searcher
 
-Currently, two official plugins are available:
+<p> Github Profile Searcher is a front-end application built with React and CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</p>
 
-## Expanding the ESLint configuration
+![Searching Feature](https://i.imgur.com/bwrsN5X.gif)  
+<p>This is a simple challenge from <a href="https://devchallenges.io/">devChallenges</a> that consumes the <a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub API</a>. It was built to practice search bar manipulation, API fetching, and CSS styling.</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<p>Users can search for GitHub profiles through the search bar, and detailed information about the profile is displayed — including cards showcasing the user's repositories.</p>
+</div>
